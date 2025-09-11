@@ -8,6 +8,7 @@
   "devDependencies": {
     "@faker-js/faker": "^10.0.0",
     "@types/express": "^5.0.3",
+    "@types/midtrans-client": "^1.4.0",
     "@types/node": "^24.3.1",
     "prisma": "^6.16.0",
     "tsx": "^4.20.5",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "@prisma/client": "^6.16.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "midtrans-client": "^1.4.3"
   }
 }

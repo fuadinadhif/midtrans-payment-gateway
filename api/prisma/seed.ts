@@ -4,7 +4,7 @@ import {
   PaymentStatus,
   User,
   Product,
-} from "../src/generated/prisma";
+} from "../src/generated/prisma/index.js";
 import { faker } from "@faker-js/faker";
 
 const prisma = new PrismaClient();
