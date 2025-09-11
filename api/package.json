@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "seed": "tsx prisma/seed.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "prisma": "^6.16.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.0",
+    "express": "^5.1.0"
+  }
+}
