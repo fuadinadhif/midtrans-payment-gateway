@@ -1,5 +1,7 @@
 import express, { Application, Request, Response } from "express";
 
+import cors from "cors";
+
 import userRoutes from "./routes/user.route.js";
 import productRoutes from "./routes/product.route.js";
 import orderRoutes from "./routes/order.route.js";
@@ -14,6 +16,7 @@ class App {
   }
 
   #config(): void {
+    this.#app.use(cors({ origin: "http://localhost:3000", credentials: true }));
     this.#app.use(express.json());
   }
 

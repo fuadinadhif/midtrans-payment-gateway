@@ -26,7 +26,7 @@ enum PaymentStatus {
 }
 
 model User {
-  id        String   @id @default(uuid())
+  id        Int      @id @default(autoincrement())
   name      String
   email     String   @unique
   role      Role     @default(CUSTOMER)
@@ -37,7 +37,7 @@ model User {
 }
 
 model Product {
-  id        String   @id @default(uuid())
+  id        Int      @id @default(autoincrement())
   name      String
   price     Decimal  @db.Decimal(10, 2)
   createdAt DateTime @default(now())
@@ -47,9 +47,9 @@ model Product {
 }
 
 model Order {
-  id            String        @id @default(uuid())
-  userId        String
-  productId     String
+  id            Int           @id @default(autoincrement())
+  userId        Int
+  productId     Int
   quantity      Int
   paymentStatus PaymentStatus @default(PENDING)
   createdAt     DateTime      @default(now())
